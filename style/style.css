@@ -354,6 +354,7 @@ body{
 }
 .media-left{
    padding: 0.5rem ;
+   flex-basis: 50%;
 }
 
 .parttwo {
@@ -389,6 +390,7 @@ body{
 }
 .media-right{
     padding-left: 2.5rem;
+    flex-basis: 50%;
 }
 .media-right__title{
     font-size: 40px;
@@ -1271,7 +1273,6 @@ textarea::placeholder{
    }
    .image-student{
     text-align: center;
-    /* height: 100vh; */
     background-position: center center;
    }
    .image-student__content{
@@ -1305,7 +1306,7 @@ textarea::placeholder{
     background-position:center right;
    }
    .media-left{
-    width: 25rem;
+    width: 100%;
    }
    .vedio{
     width: 100%;
@@ -2203,15 +2204,19 @@ textarea::placeholder{
       background-size: cover;
      }
      .fox-media{
-      flex-direction: column;
+      flex-direction: row;
       padding-top: 5rem;
+      justify-content: center;
      }
      .media-left{
         width: 100%;
+        flex-basis: 37%;
+        margin-right: 0.5rem;
      }
      .vedio{
-        width: 100%;
+        width: auto;
         background-size: cover;
+        height: 86vh;
      }
      .wrapper-bottom{
       flex-direction: column;
@@ -2221,6 +2226,10 @@ textarea::placeholder{
      }
      .media-right{
       padding-left: 0;
+      flex-basis: 42%;
+     }
+     .media-right__text{
+        line-height: 1.8;
      }
      .status{
         height: 100%;
